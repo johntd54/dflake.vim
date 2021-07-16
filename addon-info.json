@@ -1,0 +1,5 @@
+{
+  "name": "dflake",
+  "author": "johntd54",
+  "description": "Run Python flake8 lint checker with support of fzf"
+}

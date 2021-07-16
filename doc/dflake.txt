@@ -1,0 +1,71 @@
+*dflake.txt*	Run Python flake8 lint checker with support of fzf
+johntd54                                                              *dflake*
+
+==============================================================================
+CONTENTS                                                     *dflake-contents*
+  1. Introduction...............................................|dflake-intro|
+  2. Installation.............................................|dflake-install|
+  3. Commands................................................|dflake-commands|
+  4. Credit....................................................|dflake-credit|
+  5. License..................................................|dflake-license|
+
+==============================================================================
+INTRODUCTION                                                    *dflake-intro*
+
+Run Python flake8 lint checker with support of fzf.
+
+USAGE: Run `:Dflake` to open lint problems in fzf, select files and open in:
+
+  * current buffer with <CR>
+  * new tab with <ctrl-t>
+  * horizontal split with <ctrl-x>
+  * vertical split with <ctrl-v>
+
+Or <ctr-z> to close the listing.
+
+
+This plugin depends on `flake8`, 'junegunn/fzf' program and Vim plugin in
+order to display flake8 warnings with `fzf`.
+
+For support, please refer to :help dflake.
+
+
+==============================================================================
+INSTALLATION                                                  *dflake-install*
+
+
+Install software dependency:
+
+  1. Make sure to have `fzf` installed.
+  2. Make sure to have `flake8` installed.
+
+Use your favorite Vim plugin manager and include:
+
+  1. Plug 'junegunn/fzf' (required for integrating fzf with Vim)
+  2. Plug 'johntd54/dflake.vim'
+
+
+==============================================================================
+COMMANDS                                                     *dflake-commands*
+
+:Dflake[!]                                                           *:Dflake*
+  Run flake8 and show the issues in fzf for selection
+
+==============================================================================
+CREDIT                                                         *dflake-credit*
+
+
+This plugin depends on `fzf` and `flake8` to work. Also, it has referenced and
+make use parts of the code from 'junegunn/fzf.vim'.
+
+The vim document is generated with `vimdoc`.
+
+
+==============================================================================
+LICENSE                                                       *dflake-license*
+
+MIT License
+
+
+
+vim:tw=78:ts=8:ft=help:norl:
